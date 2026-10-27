@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fisnet - Internet Cepat & Stabil</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white font-sans antialiased text-slate-700 m-0 p-0 selection:bg-purple-100 selection:text-[#7a188f]">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="w-full sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <!-- Top Bar Minimalis -->
+    <div class="w-full bg-slate-50 text-[11px] text-slate-500 border-b border-slate-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-1.5 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-4">
+          <a href="tel:+6282227177151" class="hover:text-[#7a188f] transition-colors">Telp/WA: 0822-2717-7151</a>
+          <span class="text-slate-200">|</span>
+          <a href="mailto:admin@fisnet.id" class="hover:text-[#7a188f] transition-colors">admin@fisnet.id</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="https://www.tiktok.com/@fisnet" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity">TikTok</a>
+          <a href="https://www.facebook.com/fisnetisp" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity">Facebook</a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B6282227177151" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar Utama -->
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#beranda" class="text-2xl font-bold tracking-tight text-[#7a188f] lowercase select-none">fisnet</a>
+
+      <div class="hidden lg:flex lg:items-center lg:gap-8">
+        <ul class="flex items-center gap-7 text-xs font-medium text-slate-600">
+          <li><a href="#beranda" class="hover:text-[#7a188f] transition-colors">Beranda</a></li>
+          <li><a href="#tentang-kami" class="hover:text-[#7a188f] transition-colors">Tentang Kami</a></li>
+          <li><a href="#layanan-kami" class="hover:text-[#7a188f] transition-colors">Paket Harga</a></li>
+          <li><a href="#kontak" class="hover:text-[#7a188f] transition-colors">Kontak</a></li>
+          <li><a href="#tools" class="hover:text-[#7a188f] transition-colors">Cek Area / Tools</a></li>
+        </ul>
+        <div class="bg-purple-600 hover:bg-[#68137a] text-white text-xs font-semibold  px-3 py-2 rounded-xl   transition-all shadow-sm">
+        <a href="#kontak" >
+          Pasang Sekarang
+        </a>
+        </div>
+      </div
+      <div class="flex items-center lg:hidden">
+        <button id="burger-btn" type="button" aria-expanded="false" class="w-8 h-8 flex items-center justify-center text-slate-700 text-xl cursor-pointer">
+          <span id="burger-icon">&#9776;</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 py-3 shadow-lg">
+      <ul class="flex flex-col space-y-2 text-xs font-medium text-slate-600 pb-3">
+        <li><a href="#beranda" class="mobile-link block py-1">Beranda</a></li>
+        <li><a href="#tentang-kami" class="mobile-link block py-1">Tentang Kami</a></li>
+        <li><a href="#layanan-kami" class="mobile-link block py-1">Paket Harga</a></li>
+        <li><a href="#kontak" class="mobile-link block py-1">Kontak</a></li>
+        <li><a href="#tools" class="mobile-link block py-1">Cek Area / Tools</a></li>
+      </ul>
+      <a href="#kontak" class="mobile-link block text-center bg-[#7a188f] text-white text-xs font-semibold py-2.5 rounded-full">
+        Pasang Sekarang
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== BERANDA ==================== -->
+  <section id="beranda" class="scroll-mt-20 py-20 lg:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <span class="inline-block text-[11px] font-semibold tracking-wider uppercase text-[#7a188f] bg-purple-50 px-3 py-1 rounded-full">
+          Internet Fiber Optik Rumahan
+        </span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.2]">
+          Koneksi WiFi Cepat, Stabil & Tanpa Batas Kuota.
+        </h1>
+        <p class="text-sm sm:text-base text-slate-500 leading-relaxed max-w-xl">
+          Nikmati internet lancar untuk seluruh anggota keluarga di rumah. Bebas FUP, streaming tanpa lag, dan didukung layanan teknis yang sigap.
+        </p>
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <a href="#layanan-kami" class="bg-[#7a188f] hover:bg-[#68137a] text-white text-xs font-semibold px-6 py-3 rounded-full transition-all shadow-sm">
+            Lihat Paket Harga
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B6282227177151" target="_blank" rel="noopener noreferrer" class="border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-semibold px-6 py-3 rounded-full transition-all">
+            Konsultasi WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="text-2xl font-bold text-[#7a188f]">100%</p>
+          <p class="text-xs text-slate-500 mt-1">Fiber Optik Murni</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="text-2xl font-bold text-[#7a188f]">Tanpa FUP</p>
+          <p class="text-xs text-slate-500 mt-1">Unlimited Sebulan Penuh</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="text-2xl font-bold text-[#7a188f]">24/7</p>
+          <p class="text-xs text-slate-500 mt-1">Dukungan Teknisi</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+          <p class="text-2xl font-bold text-[#7a188f]">Flat</p>
+          <p class="text-xs text-slate-500 mt-1">Harga Terjangkau</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TENTANG KAMI ==================== -->
+  <section id="tentang-kami" class="scroll-mt-20 py-20 lg:py-24 bg-slate-50/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-4">
+          <span class="text-[11px] font-semibold tracking-wider uppercase text-[#7a188f]">Tentang Kami</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+            Solusi Akses Digital Terpercaya untuk Rumah dan Usaha Anda
+          </h2>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            <strong class="text-slate-700">fisnet</strong> hadir untuk memastikan setiap rumah dan tempat usaha mendapatkan kualitas internet terbaik tanpa rasa khawatir akan gangguan jaringan yang putus-putus.
+          </p>
+        </div>
+
+        <div class="lg:col-span-6 space-y-3">
+          <div class="p-4 rounded-xl bg-white border border-slate-100 shadow-sm flex items-start gap-3">
+            <span class="text-[#7a188f] font-bold text-sm">01</span>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Proses Pemasangan Cepat</p>
+              <p class="text-xs text-slate-500 mt-0.5">Teknisi profesional kami langsung mengatur instalasi kabel dengan rapi.</p>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-100 shadow-sm flex items-start gap-3">
+            <span class="text-[#7a188f] font-bold text-sm">02</span>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Transparansi Layanan</p>
+              <p class="text-xs text-slate-500 mt-0.5">Tidak ada biaya tersembunyi dalam tagihan bulanan Anda.</p>
+            </div>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-slate-100 shadow-sm flex items-start gap-3">
+            <span class="text-[#7a188f] font-bold text-sm">03</span>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Latensi Rendah</p>
+              <p class="text-xs text-slate-500 mt-0.5">Nyaman digunakan untuk meeting online, sekolah, dan game kompetitif.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LAYANAN KAMI ==================== -->
+  <section id="layanan-kami" class="scroll-mt-20 py-20 lg:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-lg mx-auto mb-16 space-y-2">
+        <span class="text-[11px] font-semibold tracking-wider uppercase text-[#7a188f]">Paket Pilihan</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Pilih Kecepatan Sesuai Kebutuhan</h2>
+        <p class="text-xs sm:text-sm text-slate-500">Harga bersahabat dengan kualitas jaringan optik berkecepatan tinggi.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Paket 1 -->
+        <div class="bg-slate-50/50 rounded-2xl border border-slate-100 p-6 flex flex-col justify-between transition-all hover:border-slate-200">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white text-slate-600 border border-slate-100">Rumahan</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-4">Home Basic</h3>
+            <p class="text-3xl font-extrabold text-[#7a188f] mt-1">20 Mbps</p>
+            <p class="text-xs text-slate-400 mt-0.5">Rp 185.000 / bulan</p>
+
+            <ul class="mt-6 space-y-2.5 text-xs text-slate-500 border-t border-slate-100 pt-5">
+              <li>• Cocok untuk 1 - 5 perangkat</li>
+              <li>• Browsing dan media sosial lancar</li>
+              <li>• Unlimited tanpa batasan FUP</li>
+              <li>• Gratis pinjam perangkat WiFi</li>
+            </ul>
+          </div>
+          <a href="https://api.whatsapp.com/send/?phone=%2B6282227177151&text=Halo%20Fisnet,%20saya%20tertarik%20paket%20Home%20Basic%2020%20Mbps" target="_blank" rel="noopener noreferrer" class="mt-8 block text-center bg-white border border-slate-200 hover:bg-[#7a188f] hover:text-white hover:border-[#7a188f] text-slate-700 font-semibold text-xs py-2.5 rounded-full transition-all">
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Paket 2 (Populer) -->
+        <div class="bg-white rounded-2xl border-2 border-[#7a188f] p-6 flex flex-col justify-between shadow-sm relative">
+          <div class="absolute -top-3 right-6 bg-[#7a188f] text-white text-[10px] font-bold uppercase tracking-wider px-3 py-0.5 rounded-full">
+            Favorit
+          </div>
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-purple-50 text-[#7a188f]">Keluarga</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-4">Home Family</h3>
+            <p class="text-3xl font-extrabold text-[#7a188f] mt-1">50 Mbps</p>
+            <p class="text-xs text-slate-400 mt-0.5">Rp 275.000 / bulan</p>
+
+            <ul class="mt-6 space-y-2.5 text-xs text-slate-500 border-t border-slate-100 pt-5">
+              <li>• Cocok untuk 5 - 12 perangkat</li>
+              <li>• Streaming 4K & gaming mulus</li>
+              <li>• Unlimited tanpa batasan FUP</li>
+              <li>• Prioritas penanganan gangguan</li>
+            </ul>
+          </div>
+          <a href="https://api.whatsapp.com/send/?phone=%2B6282227177151&text=Halo%20Fisnet,%20saya%20tertarik%20paket%20Home%20Family%2050%20Mbps" target="_blank" rel="noopener noreferrer" class="mt-8 block text-center bg-[#7a188f] hover:bg-[#68137a] text-white font-semibold text-xs py-2.5 rounded-full transition-all shadow-sm">
+            Pilih Paket
+          </a>
+        </div>
+
+        <!-- Paket 3 -->
+        <div class="bg-slate-50/50 rounded-2xl border border-slate-100 p-6 flex flex-col justify-between transition-all hover:border-slate-200">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-white text-slate-600 border border-slate-100">Bisnis</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-4">Business Pro</h3>
+            <p class="text-3xl font-extrabold text-[#7a188f] mt-1">100 Mbps</p>
+            <p class="text-xs text-slate-400 mt-0.5">Rp 495.000 / bulan</p>
+
+            <ul class="mt-6 space-y-2.5 text-xs text-slate-500 border-t border-slate-100 pt-5">
+              <li>• Ideal untuk kantor & cafe</li>
+              <li>• Kecepatan upload & download simetris</li>
+              <li>• Unlimited tanpa batasan FUP</li>
+              <li>• Dukungan teknis khusus usaha</li>
+            </ul>
+          </div>
+          <a href="https://api.whatsapp.com/send/?phone=%2B6282227177151&text=Halo%20Fisnet,%20saya%20tertarik%20paket%20Business%20Pro%20100%20Mbps" target="_blank" rel="noopener noreferrer" class="mt-8 block text-center bg-white border border-slate-200 hover:bg-[#7a188f] hover:text-white hover:border-[#7a188f] text-slate-700 font-semibold text-xs py-2.5 rounded-full transition-all">
+            Pilih Paket
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONI (komen :V) PELANGGAN ==================== -->
+  <section class="py-20 lg:py-24 bg-slate-50/50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    
+    <!-- Judul Section -->
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">Apa Kata Pelanggan Kami?</h2>
+      <p class="text-slate-500 text-xs sm:text-sm mt-1">Kepuasan pelanggan adalah prioritas kami.</p>
+    </div>
+
+    <!-- Grid Card Testimoni -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Header Profil -->
+          <div class="flex items-center gap-3 mb-4">
+            <img src="agha.png" alt="Agha" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h3 class="font-semibold text-slate-900 text-xs">Agha</h3>
+              <p class="text-[11px] text-slate-400">Linux enjoyer</p>
+            </div>
+          </div>
+          <!-- Isi Testimoni -->
+          <p class="text-slate-600 text-xs leading-relaxed mb-6">
+            "Internet dari Fisnet sangat stabil, Tidak seperti di IDN yang sinyalnya sesuai mood!"
+          </p>
+        </div>
+        <!-- Rating -->
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-800">
+          <span class="text-amber-400 text-sm">★</span>
+          <span>5</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Header Profil -->
+          <div class="flex items-center gap-3 mb-4">
+            <img src="razqo.png" alt="Razqo" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h3 class="font-semibold text-slate-900 text-xs">Razqo</h3>
+              <p class="text-[11px] text-slate-400">Content Creator</p>
+            </div>
+          </div>
+          <!-- Isi Testimoni -->
+          <p class="text-slate-600 text-xs leading-relaxed mb-6">
+            "Sejak pakai Fisnet, Saya sudah tidak toxic lagi karena wifi ngelag!"
+          </p>
+        </div>
+        <!-- Rating -->
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-800">
+          <span class="text-amber-400 text-sm">★</span>
+          <span>4.9</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Header Profil -->
+          <div class="flex items-center gap-3 mb-4">
+            <img src="aqil.png" alt="akikolo" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h3 class="font-semibold text-slate-900 text-xs">akikolo</h3>
+              <p class="text-[11px] text-slate-400">Streamer roblox</p>
+            </div>
+          </div>
+          <!-- Isi Testimoni -->
+          <p class="text-slate-600 text-xs leading-relaxed mb-6">
+            "Untuk kebutuhan live streaming, Fisnet adalah pilihan terbaik. Jaringan stabil dan teknisinya responsif."
+          </p>
+        </div>
+        <!-- Rating -->
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-800">
+          <span class="text-amber-400 text-sm">★</span>
+          <span>4.7</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Header Profil -->
+          <div class="flex items-center gap-3 mb-4">
+            <img src="rizad.png" alt="MR.Rizad" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h3 class="font-semibold text-slate-900 text-xs">MR.Rizad</h3>
+              <p class="text-[11px] text-slate-400">Counseling Teacher</p>
+            </div>
+          </div>
+          <!-- Isi Testimoni -->
+          <p class="text-slate-600 text-xs leading-relaxed mb-6">
+            "Untuk kebutuhan mencari konten edukatif di internet, Fisnet adalah pilihan terbaik. Jaringan Gas pol sampe mentok!"
+          </p>
+        </div>
+        <!-- Rating -->
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-800">
+          <span class="text-amber-400 text-sm">★</span>
+          <span>4.7</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Header Profil -->
+          <div class="flex items-center gap-3 mb-4">
+            <img src="cuking.jpg" alt="akikolo" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h3 class="font-semibold text-slate-900 text-xs">cuking tetangga</h3>
+              <p class="text-[11px] text-slate-400">minta pindang</p>
+            </div>
+          </div>
+          <!-- Isi Testimoni -->
+          <p class="text-slate-600 text-xs leading-relaxed mb-6">
+            "Miaw miaw miaw-miaw, miaw miaw,MIAWWW miaw miaw miaw!."
+          </p>
+        </div>
+        <!-- Rating -->
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-800">
+          <span class="text-amber-400 text-sm">★</span>
+          <span>5</span>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+        <div>
+          <!-- Header Profil -->
+          <div class="flex items-center gap-3 mb-4">
+            <img src="tony.jpg" alt="akikolo" class="w-11 h-11 rounded-full object-cover">
+            <div>
+              <h3 class="font-semibold text-slate-900 text-xs">Tony Stark</h3>
+              <p class="text-[11px] text-slate-400">CO-Founder of avangers</p>
+            </div>
+          </div>
+          <!-- Isi Testimoni -->
+          <p class="text-slate-600 text-xs leading-relaxed mb-6">
+            "With the Fisnet provider, I can now proceed smoothly in developing more advanced AI. "
+          </p>
+        </div>
+        <!-- Rating -->
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-slate-800">
+          <span class="text-amber-400 text-sm">★</span>
+          <span>4.9</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section> 
+
+  <!-- ==================== KONTAK ==================== -->
+  <section id="kontak" class="scroll-mt-20 py-20 lg:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 space-y-5">
+          <span class="text-[11px] font-semibold tracking-wider uppercase text-[#7a188f]">Kontak Kami</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Hubungi Kami Sekarang</h2>
+          <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+            Ingin pasang baru atau berkonsultasi mengenai area jangkauan? Silakan hubungi kami melalui saluran berikut.
+          </p>
+
+          <div class="space-y-3 pt-2">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">WhatsApp</p>
+              <a href="https://api.whatsapp.com/send/?phone=%2B6282227177151" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-800 hover:text-[#7a188f] transition-colors">
+                +62 822-2717-7151
+              </a>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+              <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Email Resmi</p>
+              <a href="mailto:admin@fisnet.id" class="text-xs font-bold text-slate-800 hover:text-[#7a188f] transition-colors">
+                admin@fisnet.id
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-slate-50/50 border border-slate-100 rounded-2xl p-6 sm:p-8">
+          <h3 class="text-base font-bold text-slate-900 mb-5">Formulir Pendaftaran</h3>
+          <form id="contact-form" class="space-y-4">
+            <div>
+              <label for="nama" class="block text-xs font-medium text-slate-600 mb-1">Nama Lengkap</label>
+              <input type="text" id="nama" required placeholder="Masukkan nama Anda" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-200 focus:outline-none focus:border-[#7a188f] bg-white transition-colors">
+            </div>
+            <div>
+              <label for="telepon" class="block text-xs font-medium text-slate-600 mb-1">Nomor WhatsApp</label>
+              <input type="tel" id="telepon" required placeholder="Contoh: 08123456789" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-200 focus:outline-none focus:border-[#7a188f] bg-white transition-colors">
+            </div>
+            <div>
+              <label for="pesan" class="block text-xs font-medium text-slate-600 mb-1">Alamat Pemasangan / Pesan</label>
+              <textarea id="pesan" rows="3" required placeholder="Tulis alamat lengkap Anda..." class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-200 focus:outline-none focus:border-[#7a188f] bg-white transition-colors"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-[#7a188f] hover:bg-[#68137a] text-white font-semibold text-xs py-3 rounded-xl transition-all shadow-sm cursor-pointer">
+              Kirim via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TOOLS ==================== -->
+  <section id="tools" class="scroll-mt-20 py-20 lg:py-24 bg-white border-t border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-lg mx-auto mb-16 space-y-2">
+        <span class="text-[11px] font-semibold tracking-wider uppercase text-[#7a188f]">Alat Bantu</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Kalkulator & Uji Jaringan</h2>
+        <p class="text-xs sm:text-sm text-slate-500">Hitung perkiraan kebutuhan kecepatan dan tes koneksi Anda secara instan.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Kalkulator -->
+        <div class="bg-slate-50/50 border border-slate-100 rounded-2xl p-6 sm:p-8 space-y-4">
+          <h3 class="text-base font-bold text-slate-900">1. Kalkulator Kebutuhan Paket</h3>
+          <p class="text-xs text-slate-500">Tentukan rekomendasi kecepatan berdasarkan jumlah perangkat aktif.</p>
+          
+          <div class="space-y-3 pt-2">
+            <div>
+              <label for="device-count" class="block text-xs font-medium text-slate-600 mb-1">Jumlah Perangkat / Pengguna:</label>
+              <input type="number" id="device-count" min="1" max="100" value="4" class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-white border border-slate-200 focus:outline-none focus:border-[#7a188f]">
+            </div>
+
+            <div>
+              <label for="usage-type" class="block text-xs font-medium text-slate-600 mb-1">Aktivitas Utama:</label>
+              <select id="usage-type" class="w-full px-3.5 py-2.5 text-xs rounded-xl bg-white border border-slate-200 focus:outline-none focus:border-[#7a188f]">
+                <option value="5">Chatting & Sosmed ringan</option>
+                <option value="10" selected>YouTube / WFH / Gaming</option>
+                <option value="20">Streaming 4K / Banyak Perangkat</option>
+              </select>
+            </div>
+
+            <button type="button" id="calc-btn" class="w-full bg-[#7a188f] hover:bg-[#68137a] text-white font-semibold text-xs py-2.5 rounded-xl transition-all cursor-pointer">
+              Hitung Kebutuhan
+            </button>
+
+            <div id="calc-result" class="p-3.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-600">
+              Rekomendasi: <strong class="text-[#7a188f]">Paket Home Family 50 Mbps</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speedtest -->
+        <div class="bg-slate-50/50 border border-slate-100 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <h3 class="text-base font-bold text-slate-900">2. Simulasi Tes Kecepatan</h3>
+            <p class="text-xs text-slate-500">Uji perkiraan latensi dan kecepatan koneksi internet Anda.</p>
+
+            <div class="grid grid-cols-3 gap-3 pt-3 text-center">
+              <div class="bg-white p-3 rounded-xl border border-slate-200">
+                <p class="text-[10px] uppercase tracking-wider text-slate-400">Ping</p>
+                <p id="ping-val" class="text-sm font-bold text-slate-800 mt-0.5">-- ms</p>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-slate-200">
+                <p class="text-[10px] uppercase tracking-wider text-slate-400">Download</p>
+                <p id="dl-val" class="text-sm font-bold text-[#7a188f] mt-0.5">-- Mbps</p>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-slate-200">
+                <p class="text-[10px] uppercase tracking-wider text-slate-400">Upload</p>
+                <p id="ul-val" class="text-sm font-bold text-slate-800 mt-0.5">-- Mbps</p>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" id="speed-btn" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs py-2.5 rounded-xl transition-all cursor-pointer">
+            Mulai Uji Koneksi
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER (simple aja :V) ==================== -->
+  <footer class="bg-white text-slate-400 py-8 border-t border-slate-100 text-center text-xs">
+    <div class="max-w-6xl mx-auto px-4">
+      <p>&copy; 2026 <strong class="text-slate-700">fisnet</strong>. Seluruh Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // 1. Toggle Menu Mobile
+    const burgerBtn = document.getElementById('burger-btn');
+    const burgerIcon = document.getElementById('burger-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    burgerBtn.addEventListener('click', () => {
+      const isExpanded = burgerBtn.getAttribute('aria-expanded') === 'true';
+      const nextState = !isExpanded;
+      mobileMenu.classList.toggle('hidden', !nextState);
+      burgerBtn.setAttribute('aria-expanded', String(nextState));
+      burgerIcon.innerHTML = nextState ? '&times;' : '&#9776;';
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        burgerBtn.setAttribute('aria-expanded', 'false');
+        burgerIcon.innerHTML = '&#9776;';
+      });
+    });
+
+    // 2. Form Kontak ke WhatsApp
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nama = document.getElementById('nama').value.trim();
+      const telepon = document.getElementById('telepon').value.trim();
+      const pesan = document.getElementById('pesan').value.trim();
+      const text = encodeURIComponent(`Halo Fisnet, saya ${nama} (${telepon}). ${pesan}`);
+      window.open(`https://api.whatsapp.com/send/?phone=%2B6282227177151&text=${text}`, '_blank');
+    });
+
+    // 3. Kalkulator Bandwidth
+    const calcBtn = document.getElementById('calc-btn');
+    const calcResult = document.getElementById('calc-result');
+    calcBtn.addEventListener('click', () => {
+      const devices = parseInt(document.getElementById('device-count').value) || 1;
+      const factor = parseInt(document.getElementById('usage-type').value) || 5;
+      const neededMbps = devices * factor;
+
+      let recommendedPkg = 'Paket Home Basic 20 Mbps';
+      if (neededMbps > 20 && neededMbps <= 55) {
+        recommendedPkg = 'Paket Home Family 50 Mbps';
+      } else if (neededMbps > 55) {
+        recommendedPkg = 'Paket Business Pro 100 Mbps';
+      }
+
+      calcResult.innerHTML = `Rekomendasi: <strong class="text-[#7a188f]">${recommendedPkg}</strong> (Estimasi ${neededMbps} Mbps)`;
+    });
+
+    // 4. Simulasi Speedtest
+    const speedBtn = document.getElementById('speed-btn');
+    const pingVal = document.getElementById('ping-val');
+    const dlVal = document.getElementById('dl-val');
+    const ulVal = document.getElementById('ul-val');
+
+    speedBtn.addEventListener('click', () => {
+      speedBtn.textContent = 'Mengecek...';
+      speedBtn.disabled = true;
+      pingVal.textContent = '...';
+      dlVal.textContent = '...';
+      ulVal.textContent = '...';
+
+      setTimeout(() => {
+        const ping = Math.floor(Math.random() * 5) + 4;
+        const dl = (Math.random() * 15 + 45).toFixed(1);
+        const ul = (Math.random() * 10 + 40).toFixed(1);
+
+        pingVal.textContent = `${ping} ms`;
+        dlVal.textContent = `${dl} Mbps`;
+        ulVal.textContent = `${ul} Mbps`;
+        speedBtn.textContent = 'Mulai Uji Koneksi';
+        speedBtn.disabled = false;
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html> 
